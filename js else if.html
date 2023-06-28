@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript else if</title>
+    <style>
+        h1{
+            text-align: center;
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+<h1>JavaScript else if</h1>
+
+<p>A time-based greeting:</p>
+
+<p id="satyaraj"></p>
+
+<script>
+const time = new Date().getHours();
+let greeting;
+if (time < 25) {
+  greeting = "Good morning";
+} else if (time < 15) {
+  greeting = "Good day";
+} else {
+  greeting = "Good evening";
+}
+document.getElementById("satyaraj").innerHTML = greeting;
+</script>
+
+    
+</body>
+</html>
